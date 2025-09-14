@@ -1,5 +1,5 @@
 # AI-Career-Advisor
-🤖 AI Career Advisor
+🤖 AI Career Advisor:
 This project is a personalized AI-powered career advisor. It consists of a backend API built with FastAPI that analyzes a user's skills and provides career recommendations, a skill gap analysis, and a learning roadmap. The user interface is a web application built with Streamlit that interacts with the backend to display the advice.
 
 ✨ Features
