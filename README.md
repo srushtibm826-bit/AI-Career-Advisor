@@ -1,34 +1,55 @@
 # AI-Career-Advisor
-This is a simple, two-part application for a digital wallet. It consists of a Java back-end service that handles the core financial logic and a front-end web application built with HTML, CSS (using Tailwind CSS), and JavaScript for user interaction.
+🤖 AI Career Advisor
+This project is a personalized AI-powered career advisor. It consists of a backend API built with FastAPI that analyzes a user's skills and provides career recommendations, a skill gap analysis, and a learning roadmap. The user interface is a web application built with Streamlit that interacts with the backend to display the advice.
 
-Features
- * User Management: Create and manage user accounts with an initial balance.
- * Balance Inquiry: Check the current balance of any user's wallet.
- * Fund Transfer: Securely transfer funds from one user to another.
- * Deposits & Withdrawals: Simulate deposits and withdrawals to/from user accounts.
+✨ Features
+* Skill Match: Get top career recommendations based on your current skills.
+* Skill Gap Analysis: See which skills you have and which ones you need to acquire for a specific career.
+* Learning Roadmap: Receive a step-by-step roadmap for your desired career path.
+* Personalized Tips: Get unique, AI-generated professional growth advice.
 
-Technology Stack
- * Back-end: Java
-   * Simulates a back-end service with in-memory data structures (HashMap) for    demonstration purposes.
-   * Includes core business logic for financial transactions.
- * Front-end: HTML, CSS, JavaScript
-   * HTML: The structure of the web application.
-   * Tailwind CSS: A utility-first CSS framework for rapid and responsive styling.
-   * JavaScript: Handles front-end logic, form submissions, and makes simulated API calls to the back-end.
+⚙️ Prerequisites
+* Python 3.8 or higher
+* pip package manager
 
-How to Run
+🚀 Setup & Installation
+Follow these steps to get the application running on your local machine.
 
-Back-end (Java)
-The DigitalWalletService.java file is a standalone Java class that contains a main method for testing the core logic. To run the back-end:
-   1. Compile the Java file:
-        javac DigitalWalletService.java
-   2. Run the compiled class:
-        java DigitalWalletService
-        The console will show the simulated transactions and balance updates.
+1. Clone the repository
+   git clone [repository-url]
+   cd [repository-name]
 
-Front-end (Web App)
-The BankingWebApp.html file is a single-file web application. It does not require a local server to run and can be opened directly in a web browser.
+(Note: Replace [repository-url] and [repository-name] with the actual details if this project were hosted in a Git repository.)
 
- 1. Open the BankingWebApp.html file in your preferred web browser (e.g., Chrome, Firefox, Safari).
- 2. The application will display a simple dashboard and a form for sending money.
- 3. Note: The front-end is currently a proof-of-concept and uses placeholder logic. The JavaScript fetch calls are directed to a placeholder URL (http://your-java-backend-api.com) and do not actually connect to the provided Java service. For a fully functional application, you would need to set up a real back-end API that exposes endpoints for the front-end to call.
+2. Install dependencies
+   Install the required libraries for both the FastAPI backend and the Streamlit frontend.
+   pip install fastapi "uvicorn[standard]" transformers pydantic streamlit requests
+
+3. Run the Backend Server
+  Open your terminal and start the FastAPI server. This must be running before you start      the frontend.
+  uvicorn api:app --reload
+
+4. Run the Frontend Application
+  Open a new terminal and start the Streamlit application.
+  streamlit run main.py
+
+🧑‍💻 Usage
+1. After running the commands above, a new browser tab should open automatically, showing the Streamlit app.
+
+2. In the text area, enter your skills separated by commas (e.g., Python, SQL, Machine Learning).
+
+3. Click the "🔍 Get Career Advice" button.
+
+4. The application will display your personalized career recommendations, including match scores, skill gaps, and learning roadmaps.
+
+💻 Technologies Used
+* FastAPI: A modern, fast (high-performance) web framework for building APIs with Python 3.7+.
+
+* Streamlit: An open-source app framework for Machine Learning and Data Science teams.
+
+* Hugging Face Transformers: Used for the distilgpt2 model to generate personalized text advice.
+
+* Pydantic: Used for data validation and settings management.
+
+* Requests: A simple HTTP library for making API calls from the frontend.
+
