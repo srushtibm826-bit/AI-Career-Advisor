@@ -11,8 +11,7 @@ Technology Stack
  * Back-end: Java
        *Simulates a back-end service with in-memory data structures (HashMap) for    demonstration purposes.
        *Includes core business logic for financial transactions.
- 
-  *Front-end: HTML, CSS, JavaScript
+ * Front-end: HTML, CSS, JavaScript
         *HTML: The structure of the web application.
         *Tailwind CSS: A utility-first CSS framework for rapid and responsive styling.
         *JavaScript: Handles front-end logic, form submissions, and makes simulated API calls to the back-end.
@@ -21,9 +20,9 @@ How to Run
 
 Back-end (Java)
 The DigitalWalletService.java file is a standalone Java class that contains a main method for testing the core logic. To run the back-end:
-   1Compile the Java file:
+   1. Compile the Java file:
         javac DigitalWalletService.java
-   2Run the compiled class:
+   2. Run the compiled class:
         java DigitalWalletService
         The console will show the simulated transactions and balance updates.
 
