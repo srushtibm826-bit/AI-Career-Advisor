@@ -9,8 +9,8 @@ Features
 
 Technology Stack
  * Back-end: Java
-       * Simulates a back-end service with in-memory data structures (HashMap) for    demonstration purposes.
-       * Includes core business logic for financial transactions.
+   * Simulates a back-end service with in-memory data structures (HashMap) for    demonstration purposes.
+   * Includes core business logic for financial transactions.
  * Front-end: HTML, CSS, JavaScript
         * HTML: The structure of the web application.
         * Tailwind CSS: A utility-first CSS framework for rapid and responsive styling.
