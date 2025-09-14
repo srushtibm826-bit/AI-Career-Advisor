@@ -12,9 +12,9 @@ Technology Stack
    * Simulates a back-end service with in-memory data structures (HashMap) for    demonstration purposes.
    * Includes core business logic for financial transactions.
  * Front-end: HTML, CSS, JavaScript
-        * HTML: The structure of the web application.
-        * Tailwind CSS: A utility-first CSS framework for rapid and responsive styling.
-        * JavaScript: Handles front-end logic, form submissions, and makes simulated API calls to the back-end.
+   * HTML: The structure of the web application.
+   * Tailwind CSS: A utility-first CSS framework for rapid and responsive styling.
+   * JavaScript: Handles front-end logic, form submissions, and makes simulated API calls to the back-end.
 
 How to Run
 
